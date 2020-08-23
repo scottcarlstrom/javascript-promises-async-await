@@ -13,7 +13,7 @@ getBooksAndMoviesPromise.then(results => {
     console.log("getBooksAndMoviesPromise", results);
 })
 
-const getBooksOrMoveis = () => {
+function getBooksOrMoveis() {
     return Promise.race([fetchBooks(), fetchMovies()])
     .then(results => results)
     .catch(error => console.log("Error waiting for the promise race"));
