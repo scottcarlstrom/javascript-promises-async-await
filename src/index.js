@@ -6,7 +6,7 @@ const getBooksAndMovies = () => {
         books, movies
       }))
       .catch(error => console.log("Error fetching books and movies", error));
-}
+};
 
 const getBooksAndMoviesPromise = getBooksAndMovies();
 getBooksAndMoviesPromise.then(results => {
@@ -46,13 +46,13 @@ async function getBooksOrMoviesAsync(){
 
 getBooksAndMoviesAsync().then(results => {
     console.log("movies and books", {
-        movies: results.moveis,
+        movies: results.movies,
         books: results.books
       });
 });
 
 getBooksOrMoviesAsync().then(results => {
-    console.log("movies OR books", {results,});
+    console.log("movies OR books", {
+        results,
+    });
 });
-
-
