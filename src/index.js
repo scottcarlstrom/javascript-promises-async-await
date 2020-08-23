@@ -16,5 +16,5 @@ getBooksAndMoviesPromise.then(results => {
 function getBooksOrMoveis() {
     return Promise.race([fetchBooks(), fetchMovies()])
     .then(results => results)
-    .catch(error => console.log("Error waiting for the promise race"));
+    .catch(console.log("Error waiting for the promise race"));
 }
