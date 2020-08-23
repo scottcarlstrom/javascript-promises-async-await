@@ -35,7 +35,7 @@ async function getBooksAndMoviesAsync(){
     }
 }
 
-async function getBooksOrMovies(){
+async function getBooksOrMoviesAsync(){
     try {
         
     } catch (error) {
