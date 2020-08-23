@@ -13,7 +13,7 @@ getBooksAndMoviesPromise.then(results => {
     console.log("getBooksAndMoviesPromise", results);
 })
 
-function getBooksOrMoveis() {
+function getBooksOrMovies() {
     return Promise.race([fetchBooks(), fetchMovies()])
     .then(results => results)
     .catch(error => {
@@ -21,7 +21,7 @@ function getBooksOrMoveis() {
     });
 }
 
-const getBooksOrMoveisPromise = getBooksOrMoveis();
+const getBooksOrMoviesPromise = getBooksOrMoveis();
 getBooksOrMoviesPromise.then(results => {
     console.log("getBooksOrMoviesPromise", results);
 });
