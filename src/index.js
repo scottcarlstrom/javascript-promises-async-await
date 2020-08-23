@@ -29,7 +29,16 @@ getBooksOrMoviesPromise.then(results => {
 async function getBooksAndMoviesAsync(){
     try {
         const [books, movies] = await Promise.all([asyncFetchBooks(), asyncFetchMovies()]);
+        return {books, moveis};
     } catch (error) {
         console.log("Error fetching books and movies", error);
+    }
+}
+
+async function getBooksOrMovies(){
+    try {
+        
+    } catch (error) {
+        console.error("Error waiting for the promise race", error);
     }
 }
