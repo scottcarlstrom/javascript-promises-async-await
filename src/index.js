@@ -49,10 +49,10 @@ getBooksAndMoviesAsync().then(results => {
         movies: results.movies,
         books: results.books
       });
-})
+});
 
 getBooksOrMoviesAsync().then(results => {
     console.log("movies OR books", {
         results,
       });
-})
+});
